@@ -58,16 +58,6 @@ export function Reward() {
                 <span className="text-sm font-bold text-gray-500">微信支付</span>
               </button>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <button onClick={() => setMethod('trc')} className="flex flex-col items-center py-6 border border-gray-50 rounded-2xl hover:bg-[#0f766e]/10 transition-all gap-2 group">
-                <img src="/assets/bep_icon.png" className="w-10 h-10 group-hover:scale-110 transition-transform object-contain" alt="BEP20" />
-                <span className="text-[11px] font-bold text-gray-400">USDT (BEP20)</span>
-              </button>
-              <button onClick={() => setMethod('bep')} className="flex flex-col items-center py-6 border border-gray-50 rounded-2xl hover:bg-[#0f766e]/10 transition-all gap-2 group">
-                <img src="/assets/trc_icon.png" className="w-10 h-10 group-hover:scale-110 transition-transform object-contain" alt="TRC20" />
-                <span className="text-[11px] font-bold text-gray-400">USDT (TRC20)</span>
-              </button>
-            </div>
           </div>
         ) : (
           <div className="flex flex-col items-center animate-in fade-in duration-200">
